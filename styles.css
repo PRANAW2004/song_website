@@ -88,7 +88,7 @@ input{
     position:relative;
     top:120px;
 }
-@media screen and (max-width:700px) and (min-width:400px){
+@media screen and (max-width:900px) and (min-width:400px){
     .third img,.first img,.second img{
         height:300px;
         width:300px;
