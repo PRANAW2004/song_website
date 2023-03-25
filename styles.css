@@ -104,6 +104,8 @@ input{
     .title img{
         height:400px;
         width: 400px;
-        margin: 2rem 0;
+    }
+    .title .first{
+        margin-top: 2rem;
     }
 }
