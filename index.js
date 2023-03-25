@@ -101,3 +101,9 @@ function back(name1){
     document.querySelector("."+name1).style.display = "none";
     document.querySelector(".main-titles").style.display = "block";
 }
+
+var x = window.matchMedia("(max-width:1024px) and (min-width: 769px)")
+
+if(x.matches){
+    document.querySelector(".fa-pause-circle").classList.add("fa-4x");
+}
