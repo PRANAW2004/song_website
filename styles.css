@@ -90,7 +90,7 @@ input{
 }
 @media screen and (max-width:995px) and (min-width:100px){
     .third img,.first img,.second img{
-        height:500px;
-        width:500px;
+        height:400px;
+        width:400px;
     }
 }
