@@ -101,4 +101,8 @@ input{
         height: 5rem;
         width: 5rem;
     }
+    .title{
+        height:400px;
+        width: 400px;
+    }
 }
