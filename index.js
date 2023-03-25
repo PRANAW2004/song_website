@@ -111,6 +111,7 @@ if(x.matches){
     for(var i=0;i<len3;i++){
         document.querySelectorAll(".s1")[i].classList.add("fa-5x");
     }
+    document.querySelector(".back-btn").classList.add("btn-lg");
 }
 else{
     document.querySelector(".btn1").classList.remove("fa-5x");
