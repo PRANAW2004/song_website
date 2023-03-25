@@ -109,6 +109,6 @@ if(x.matches){
     document.querySelector(".fa-play-circle").classList.add("fa-5x");
 }
 else{
-    document.querySelector(".fa-pause-circle").classList.remove("fa-4x");
-    document.querySelector(".fa-play-circle").classList.remove("fa-4x");
+    document.querySelector(".fa-pause-circle").classList.remove("fa-5x");
+    document.querySelector(".fa-play-circle").classList.remove("fa-5x");
 }
