@@ -93,4 +93,7 @@ input{
         height:400px;
         width:400px;
     }
+    .navbar input{
+        height: 2rem;
+    }
 }
