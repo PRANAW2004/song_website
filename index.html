@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My music</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,100;1,200;1,400;1,800;1,900&family=Sacramento&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="main-page">
+            <div class="navigation-bar">
+                <div class="container-fluid">
+                    <nav class="navbar">
+                        <a class="navbar-brand">Music For Life</a>
+                        <!-- <marquee width = "30%"></marquee>
+                        <p></p> -->
+                        <!-- <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a><i class="fa fa-pause fa-2x btn1"></i></a>
+                                <a><i class="fa fa-play fa-2x btn2"></i></a>
+                            </li>
+                        </ul> -->
+                        <input type="text" class="search" onkeyup = "search()" placeholder="Search">
+                    </nav>
+                </div>
+            </div>
+            <hr>
+            <button class="btn btn-md back-btn btn-outline-primary" style="display: none;"><i class="fa fa-arrow-left"></i> Go Back</button>
+                <div class="english-songs" style="display:none;">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 song third">                          
+                            <img src="images/believer.jpeg" alt="believer-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Imagin-Dragons Believer</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 song third">
+                            <img src="images/alan.jpeg" alt="alan-walker image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Alan-Walker Faded</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 song first">
+                            <img src="images/safari.jpeg" alt="safari image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">safari Song</h3>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-6 song third">
+                            <img src="images/alone.jpeg" alt="alan-walker image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Alan-Walker Alone</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 song third">
+                            <img src="images/queen.jpeg" alt="queen image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Queen-Bohemian Raphsody</h3>                
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 second song">
+                            <img src="images/arcade.jpeg" alt="arcade image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Arcade</h3>                
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 second song">
+                            <img src="images/lalalala.jpeg" alt="rauf and kaif"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">can't buy me loving</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 second song">
+                            <img src="images/despacito.jpg" alt="despacito-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Despacito</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/unstoppable-sia.jpeg" alt="sia-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Unstoppable-sia</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/youngblood.jpeg" alt="sia-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">YoungBlood</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/senorita.jpeg" alt="senorita-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Senorita</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/natural.jpeg" alt="natural-imagin-dragons-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Imagin-Dragons Natural</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/thunder.jpeg" alt="thunder-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Imagin-Dragons Thunder</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/bones.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Imagin-Dragons Bones</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/enemy.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Imagin-Dragons Enemy</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/eminem sing.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Eminem-Sing for the Moment</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/mockingbird.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Eminem-MockingBird</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/michael jackson.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Michael-Jackson Smooth Criminal</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/michael jackson.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Michael-Jackson The way you make me Feel</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/michael jackson.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Michael-Jackson Dangerous</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/michael jackson.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">Michael-Jackson Smooth Thriller</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 third song">
+                            <img src="images/Feeling_good.jpeg" alt="Bones-image"><br>
+                            <i class="fa fa-play-circle fa-2x play"></i>
+                            <h3 class="title">I'm Feeling Good</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="tamil-songs" style="display:none;">
+                    <h3>This is a tamil song</h3>
+                </div>
+                <div class="telugu-songs" style="display:none;">
+                    <h3>This is a telugu song</h3>
+                </div>
+        </section>
+        <br>
+        <div class="main-titles">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 title">
+                    <img src="images/english_image.jpeg" class="show_btn" onclick="" alt="english-songs">
+                    <h3>English Songs</h3>
+                    <h2 style="display:none;">english-songs</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 title">
+                    <img src="images/english_image.jpeg" class="show_btn" onclick="" alt="english-songs">
+                    <h3>Tamil Songs</h3>
+                    <h2 style="display:none;">tamil-songs</h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 title">
+                    <img src="images/english_image.jpeg" class="show_btn" onclick="" alt="english-songs">
+                    <h3>Telugu Songs</h3>
+                    <h2 style="display:none;">telugu-songs</h2>
+                </div>
+            </div>
+        </div>
+        <section class="footer1">
+            <div class="footer2">
+                <marquee></marquee><br>
+                <a><i class="fa fa-pause-circle fa-2x btn1"></i></a>
+                <a><i class="fa fa-play-circle fa-2x btn2"></i></a><br>
+            </div>
+        </section>
+        <!-- <div class="copyright">
+            <h3 style="color:white;"><i class="fa fa-copyright"></i> Pranaw Otthi</h3>
+        </div> -->
+        <script src="index.js"></script>
+    </body>
+</html>
