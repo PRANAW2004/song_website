@@ -105,8 +105,10 @@ function back(name1){
 var x = window.matchMedia("(max-width:1024px) and (min-width: 769px)")
 
 if(x.matches){
-    document.querySelector(".fa-pause-circle").classList.add("fa-4x");
+    document.querySelector(".fa-pause-circle").classList.add("fa-5x");
+    document.querySelector(".fa-play-circle").classList.add("fa-5x");
 }
 else{
     document.querySelector(".fa-pause-circle").classList.remove("fa-4x");
+    document.querySelector(".fa-play-circle").classList.remove("fa-4x");
 }
