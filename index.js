@@ -105,10 +105,10 @@ function back(name1){
 var x = window.matchMedia("(max-width:1024px) and (min-width: 769px)")
 
 if(x.matches){
-    document.querySelector(".btn1").classList.add("fa-6x");
-    document.querySelector(".btn2").classList.add("fa-6x");
+    document.querySelector(".btn1").classList.add("fa-5x");
+    document.querySelector(".btn2").classList.add("fa-5x");
 }
 else{
-    document.querySelector(".btn1").classList.remove("fa-6x");
-    document.querySelector(".btn2").classList.remove("fa-6x");
+    document.querySelector(".btn1").classList.remove("fa-5x");
+    document.querySelector(".btn2").classList.remove("fa-5x");
 }
