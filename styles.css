@@ -114,13 +114,23 @@ input{
         margin:5rem 0;
     }
 }
-.copyright{
+.copyright1{
+    position:relative;
+}
+.copyright2{
+    position:absolute;
+    z-index:1;
+    bottom:0;
+    width:100%;
+}
+
+/* .copyright{
     position:relative;
     width:100%;
     bottom:0px;
 /*     top:280px;
     text-align:bottom; */
-}
-.copyright h3{
+} */
+.copyright2 h3{
     color:white;
 }
