@@ -94,7 +94,7 @@ input{
     position:sticky;
     top:130px;
     border-color:black;
-    border-radius:10px;
+    border-radius:10px!important;
 }
 @media screen and (max-width:1024px) and (min-width:769px){
     .third img,.first img,.second img{
