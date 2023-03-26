@@ -120,9 +120,8 @@ input{
     h2,h3{
         font-size:2rem;
     }
-    .footer2{
-        position: fixed;
-        margin-top:50px;
+    .english-songs{
+        margin-bottom: 100px;
     }
 }
 .copyright{
