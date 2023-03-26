@@ -117,6 +117,7 @@ input{
 .copyright{
     position:relative;
     width:100%;
-    top:500px;
+    top:280px;
+    color:white;
     text-align:bottom;
 }
