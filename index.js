@@ -77,7 +77,7 @@ var len2 = document.querySelectorAll(".title").length;
 let pass = false;
 
 var len4 = document.querySelectorAll(".titleimg").length;
-
+console.log(len4);
 for(var i=0;i<len4;i++){
     document.querySelectorAll(".titleimg")[i].addEventListener("click",function(){
         pass = true;  
