@@ -114,6 +114,7 @@ input{
         margin:5rem 0;
     }
     .copyright{
+        position:relative;
         bottom:-200px;
     }
 }
