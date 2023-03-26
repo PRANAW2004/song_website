@@ -122,11 +122,11 @@ input{
     }
     .footer2{
         position: fixed;
-        top:120rem;
+        margin-top:20px;
     }
 }
 .copyright{
-    position:relative;
+    position: relative;
     top:280px;
 }
 .copyright h3{
