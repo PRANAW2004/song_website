@@ -120,6 +120,9 @@ input{
     h2,h3{
         font-size:2rem;
     }
+    .footer1{
+        margin-top:1rem;
+    }
 }
 .copyright{
     position:relative;
