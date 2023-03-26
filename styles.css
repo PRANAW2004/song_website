@@ -116,10 +116,10 @@ input{
 }
 .copyright1{
     position:relative;
+    bottom:0;
 }
 .copyright2{
-    position:absolute;
-    z-index:1;
+    position:relative;
     bottom:0;
     width:100%;
 }
