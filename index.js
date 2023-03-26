@@ -79,7 +79,7 @@ let pass = false;
 var len4 = document.querySelectorAll(".titleimg").length;
 
 for(var i=0;i<len4;i++){
-    document.querySelector(".titleimg").addEventListener("click",function(){
+    document.querySelectorAll(".titleimg")[i].addEventListener("click",function(){
         pass = true;  
     });
 }
