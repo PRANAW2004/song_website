@@ -85,8 +85,8 @@ input{
 }
 .back-btn{
     text-align: left;
-    position:relative;
-    top:120px;
+    position:sticky;
+    top:0px;
 }
 @media screen and (max-width:1024px) and (min-width:769px){
     .third img,.first img,.second img{
