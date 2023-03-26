@@ -106,12 +106,14 @@ function show(title){
     document.querySelector("."+title).style.display = "block";
     document.querySelector(".main-titles").style.display = "none";
     document.querySelector(".footer1").style.display = "block";
+    document.querySelector(".copyright").style.display = "none";
 }
 function back(name1){
     document.querySelector(".footer1").style.display = "none";
     document.querySelector(".back-btn").style.display = "none";
     document.querySelector("."+name1).style.display = "none";
     document.querySelector(".main-titles").style.display = "block";
+    document.querySelector(".copyright").style.display = "block";
 }
 
 var x = window.matchMedia("(max-width:1024px) and (min-width: 769px)")
