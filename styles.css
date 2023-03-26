@@ -114,16 +114,13 @@ input{
         margin:5rem 0;
     }
     .copyright{
-        position:relative;
         bottom:-130px;
+    }
 }
-
 .copyright{
     position:relative;
-    width:100%;
     top:280px;
-    text-align:bottom;
 }
 .copyright h3{
-    color:white;
+    color:white;    
 }
