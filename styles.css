@@ -2,9 +2,11 @@ body{
     background-color:rgba(1,2,3,0.9);
     text-align:center;
 }
+.navigation-bar{
+    position:fixed;
+}
 .container-fluid{
     background-color: black;
-    position: fixed;
     width: 100%;
     left: 0;
     top: 0;
