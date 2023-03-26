@@ -116,6 +116,7 @@ input{
 }
 .copyright{
     position:relative;
-    bottom:0;
+    width:100%;
+    top:100px;
     text-align:bottom;
 }
