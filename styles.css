@@ -121,7 +121,7 @@ input{
         font-size:2rem;
     }
     .footer2{
-        position: relative;
+        position: fixed;
         top: 0px;
     }
 }
