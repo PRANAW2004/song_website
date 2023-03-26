@@ -74,12 +74,24 @@ var name1=" ";
 
 var len2 = document.querySelectorAll(".title").length;
 
+let pass = false;
+
+var len4 = document.querySelectorAll(".titleimg").length;
+
+for(var i=0;i<len4;i++){
+    document.querySelector(".titleimg").addEventListener("click",function(){
+        pass = true;  
+    });
+}
 for(var i=0;i<len2;i++){
     document.querySelectorAll(".title")[i].addEventListener("click",function(){
-        var name = this.querySelector("h2");
-        name1 = name.innerText;
-        console.log("."+name.innerText);
-        show(name.innerText);
+        if(pass){
+            var name = this.querySelector("h2");
+            name1 = name.innerText;
+            console.log("."+name.innerText);
+            show(name.innerText);
+        }
+        pass = false;
     });
 }
 
