@@ -8,11 +8,15 @@ var value = 0;
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
+        info();
     })
     document.querySelectorAll(".play")[i].addEventListener("click",function(){
         flag1 = true;
+        info();
     })
 }
+
+function info(){
 for(var i=0;i<len;i++){
     document.querySelectorAll(".song")[i].addEventListener("click",function(){
         buttonclick = this.querySelector("h3");
@@ -35,6 +39,7 @@ for(var i=0;i<len;i++){
             p1 = false;
         } 
     });
+}
     if(end===true){
     // if(p1<len){
     //     console.log(p1);
@@ -53,7 +58,6 @@ for(var i=0;i<len;i++){
         play(document.querySelectorAll(".song h3")[value].innerText);
     }
 }
-
 var audio = new Audio();
 var sname = " ";
 function play(name){
