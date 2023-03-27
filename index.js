@@ -74,6 +74,10 @@ function play(name){
         audio.onloadedmetadata = function(){
             console.log(audio.duration);
         }
+        audio.onended = function(){
+            end = true;
+            info();
+        }
     }
 }
 
