@@ -2,6 +2,9 @@ var buttonclick = " "
 var len = document.querySelectorAll(".song").length;
 let flag =false;
 let flag1 = false;
+var end = false;
+var p1 = false;
+var value = 0;
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
@@ -22,7 +25,33 @@ for(var i=0;i<len;i++){
             play(buttonclick.innerText);
         }
         flag1 = false;
-});
+        if(p1===true){
+            for(var j=0;j<len;j++){
+            //console.log(j);
+                if(document.querySelectorAll(".song h3")[j].innerText===buttonclick.innerText){
+                    value = j;
+                }
+            }
+            p1 = false;
+        } 
+    });
+    if(end===true){
+    // if(p1<len){
+    //     console.log(p1);
+    //     if(buttonclick === document.querySelectorAll(".song h3")[p1].innerText){
+    //         p1 += 1;
+    //         play(document.querySelectorAll(".song h3")[p1].innerText);
+    //     }
+    //     else{
+    //         console.log(document.querySelectorAll(".song h3")[p1].innerText);
+    //         play(document.querySelectorAll(".song h3")[p1].innerText);   
+    //         p1 += 1;
+    //     }
+    // }
+        value += 1;
+        
+        play(document.querySelectorAll(".song h3")[value].innerText);
+    }
 }
 
 var audio = new Audio();
@@ -42,6 +71,7 @@ function play(name){
         sname = name;
         audio = new Audio("songs/"+name+".mp3");
         audio.play();
+        document.querySelector("marquee").innerText = "Playing "+name;
         audio.onloadedmetadata = function(){
             console.log(audio.duration);
         }
