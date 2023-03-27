@@ -55,7 +55,7 @@ function info(){
     //     }
     // }
         value += 1;
-        document.querySelectorAll("marquee").innerText = "Playing "+document.querySelectorAll(".song h3")[value].innerText;
+        document.querySelector("marquee").innerText = "Playing "+document.querySelectorAll(".song h3")[value].innerText;
         play(document.querySelectorAll(".song h3")[value].innerText);
     }
 }
