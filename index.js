@@ -103,7 +103,7 @@ document.querySelector(".footer1").style.display = "none";
 
 function show(title){
     document.querySelector(".back-btn").style.display = "block";
-    document.querySelector("#"+title).style.display = "block";
+    document.querySelector("."+title).style.display = "block";
     document.querySelector(".main-titles").style.display = "none";
     document.querySelector(".footer1").style.display = "block";
     document.querySelector(".copyright").style.display = "none";
@@ -111,7 +111,7 @@ function show(title){
 function back(name1){
     document.querySelector(".footer1").style.display = "none";
     document.querySelector(".back-btn").style.display = "none";
-    document.querySelector("#"+name1).style.display = "none";
+    document.querySelector("."+name1).style.display = "none";
     document.querySelector(".main-titles").style.display = "block";
     document.querySelector(".copyright").style.display = "block";
 }
