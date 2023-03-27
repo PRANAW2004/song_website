@@ -17,29 +17,29 @@ for(var i=0;i<len;i++){
 }
 
 function info(){
-for(var i=0;i<len;i++){
-    document.querySelectorAll(".song")[i].addEventListener("click",function(){
-        buttonclick = this.querySelector("h3");
-        document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-        if(flag){
-            play(buttonclick.innerText);
-        }
-        flag = false;
-        if(flag1){
-            play(buttonclick.innerText);
-        }
-        flag1 = false;
-        if(p1===true){
-            for(var j=0;j<len;j++){
-            //console.log(j);
-                if(document.querySelectorAll(".song h3")[j].innerText===buttonclick.innerText){
-                    value = j;
-                }
+    for(var i=0;i<len;i++){
+        document.querySelectorAll(".song")[i].addEventListener("click",function(){
+            buttonclick = this.querySelector("h3");
+            document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+            if(flag){
+                play(buttonclick.innerText);
             }
-            p1 = false;
-        } 
-    });
-}
+            flag = false;
+            if(flag1){
+                play(buttonclick.innerText);
+            }
+            flag1 = false;
+            if(p1===true){
+                for(var j=0;j<len;j++){
+                //console.log(j);
+                    if(document.querySelectorAll(".song h3")[j].innerText===buttonclick.innerText){
+                        value = j;
+                    }
+                }
+                p1 = false;
+            } 
+        });
+    }
     if(end===true){
     // if(p1<len){
     //     console.log(p1);
@@ -80,6 +80,7 @@ function play(name){
         }
         audio.onended = function(){
             end = true;
+            console.log("ended");
             info();
         }
     }
