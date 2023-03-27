@@ -49,7 +49,7 @@ for(var i=0;i<len;i++){
     //     }
     // }
         value += 1;
-        
+        document.querySelectorAll("marquee").innerText = "Playing "+document.querySelectorAll(".song h3")[value].innerText;
         play(document.querySelectorAll(".song h3")[value].innerText);
     }
 }
@@ -71,7 +71,6 @@ function play(name){
         sname = name;
         audio = new Audio("songs/"+name+".mp3");
         audio.play();
-        document.querySelector("marquee").innerText = "Playing "+name;
         audio.onloadedmetadata = function(){
             console.log(audio.duration);
         }
