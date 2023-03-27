@@ -50,7 +50,7 @@ function play(name){
 
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    document.queryselector("marquee").innerText = "paused "+buttonclick.innerText;
+    document.querySelector("marquee").innerText = "paused "+buttonclick.innerText;
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
