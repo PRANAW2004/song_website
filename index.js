@@ -21,6 +21,7 @@ function info(){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
             buttonclick = this.querySelector("h3");
             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+            p1 = true;
             if(flag){
                 play(buttonclick.innerText);
             }
