@@ -50,11 +50,11 @@ function play(name){
 
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    document.querySelector("marquee").innerText = "paused "+buttonclick.innerText;
+    document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
-    document.querySelector("marquee").innerText = "playing "+buttonclick.innerText;
+    document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
 });
 
 function search(){
