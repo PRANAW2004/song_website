@@ -45,6 +45,12 @@ function play(name){
         audio.onloadedmetadata = function(){
             console.log(audio.duration);
         }
+        if(audio.paused===true){
+            document.querySelector("marquee").innerText = "paused"+buttonclick.innerText;
+        }
+        else{
+            document.querySelector("marquee").innerText = "playing"+buttonclick.innerText;
+        }
     }
 }
 
