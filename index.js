@@ -5,6 +5,7 @@ let flag1 = false;
 var end = false;
 var p1 = false;
 var value = 0;
+console.log(len);
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
@@ -19,7 +20,6 @@ for(var i=0;i<len;i++){
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
-            console.log(len);
             buttonclick = this.querySelector("h3");
             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
