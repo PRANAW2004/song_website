@@ -1,8 +1,10 @@
 var buttonclick = " "
+var titleclick = false;
 var lentitle = document.querySelectorAll(".title").length;
 for(var i=0;i<lentitle;i++){
     document.querySelectorAll(".title")[i].addEventListener("click",function(){
         var len = this.querySelectorAll(".song").length;
+        titlefalse = true;
 //     var len = document.querySelectorAll(".song").length;
     });
 }
@@ -11,17 +13,20 @@ let flag1 = false;
 var end = false;
 var p1 = false;
 var value = 0;
-console.log(len);
+
 for(var i=0;i<len;i++){
-    document.querySelectorAll("img")[i].addEventListener("click",function(){
-        flag = true;
-        info();
-    })
-    document.querySelectorAll(".play")[i].addEventListener("click",function(){
-        flag1 = true;
-        info();
-    })
+    if(titlefalse===true){
+        document.querySelectorAll("img")[i].addEventListener("click",function(){
+            flag = true;
+            info();
+        })
+        document.querySelectorAll(".play")[i].addEventListener("click",function(){
+            flag1 = true;
+            info();
+        })
+    }
 }
+
 
 function info(){
     for(var i=0;i<len;i++){
@@ -64,12 +69,14 @@ function info(){
         if(value<len){
             value += 1;
             buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
         }
         else{
             value = 0;
             buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
         }
