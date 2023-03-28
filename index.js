@@ -16,6 +16,11 @@ for(var i=0;i<len;i++){
         info();
     })
 }
+var lentitle = 0
+function titleshow(text){
+    lentitle = document.querySelectorAll("."+text).length;
+}
+
 
 
 function info(){
@@ -145,6 +150,7 @@ for(var i=0;i<len2;i++){
             name1 = name.innerText;
             console.log("."+name.innerText);
             show(name.innerText);
+            titleshow(name.innerText);
         }
         pass = false;
     });
