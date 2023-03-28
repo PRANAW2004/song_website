@@ -21,7 +21,7 @@ var titlename = " ";
 function titleshow(text){
     lentitle = document.querySelectorAll("."+text+" .song").length;
     console.log("."+text+" .song");
-    titlename = "."+text+" .song";
+    titlename = "."+text+" .song h3";
     console.log(lentitle);
 }
 
@@ -66,14 +66,14 @@ function info(){
     // }
         if(value<lentitle){
             value += 1;
-            buttonclick = document.querySelectorAll("."+text+" .song h3")[value].innerText;
+            buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
         }
         else{
             value = 0;
-            buttonclick = document.querySelectorAll("."+text+" .song h3")[value].innerText;
+            buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
