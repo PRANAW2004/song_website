@@ -62,7 +62,7 @@ function info(){
     //         p1 += 1;
     //     }
     // }
-        if(value<len){
+        if(value<lentitle){
             value += 1;
             buttonclick = document.querySelectorAll(".song h3")[value].innerText;
             console.log(buttonclick);
