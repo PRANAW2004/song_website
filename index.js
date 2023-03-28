@@ -2,6 +2,8 @@ var buttonclick = " "
 var titleclick = false;
 var totallen = document.querySelectorAll(".song").length;
 var lentitle = document.querySelectorAll(".title").length;
+console.log(totallen)
+console.log(lentitle)
 for(var i=0;i<lentitle;i++){
     document.querySelectorAll(".title")[i].addEventListener("click",function(){
         var len = this.querySelectorAll(".song").length;
