@@ -64,7 +64,7 @@ function info(){
     //         p1 += 1;
     //     }
     // }
-        if(value<lentitle){
+        if(value<=lentitle-1){
             value += 1;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
