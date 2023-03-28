@@ -1,5 +1,6 @@
 var buttonclick = " "
 var titleclick = false;
+var totallen = document.querySelectorAll(".song").length;
 var lentitle = document.querySelectorAll(".title").length;
 for(var i=0;i<lentitle;i++){
     document.querySelectorAll(".title")[i].addEventListener("click",function(){
@@ -14,7 +15,7 @@ var end = false;
 var p1 = false;
 var value = 0;
 
-for(var i=0;i<len;i++){
+for(var i=0;i<totallen;i++){
     if(titlefalse===true){
         document.querySelectorAll("img")[i].addEventListener("click",function(){
             flag = true;
