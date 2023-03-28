@@ -54,9 +54,19 @@ function info(){
     //         p1 += 1;
     //     }
     // }
-        value += 1;
-        document.querySelector("marquee").innerText = "Playing "+document.querySelectorAll(".song h3")[value].innerText;
-        play(document.querySelectorAll(".song h3")[value].innerText);
+        if(value<len){
+            value += 1;
+            buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            document.querySelector("marquee").innerText = "Playing "+buttonclick;
+            play(buttonclick);
+        }
+        else{
+            value = 0;
+            buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            document.querySelector("marquee").innerText = "Playing "+buttonclick;
+            play(buttonclick);
+        }
+            
     }
 }
 var audio = new Audio();
