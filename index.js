@@ -1,5 +1,11 @@
 var buttonclick = " "
-var len = document.querySelectorAll(".song").length;
+var lentitle = document.querySelectorAll(".title").length;
+for(var i=0;i<lentitle;i++){
+    document.querySelectorAll(".title")[i].addEventListener("click",function(){
+        var len = this.querySelectorAll(".song").length;
+//     var len = document.querySelectorAll(".song").length;
+    });
+}
 let flag =false;
 let flag1 = false;
 var end = false;
