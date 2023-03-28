@@ -17,9 +17,11 @@ for(var i=0;i<len;i++){
     })
 }
 var lentitle = 0
+var titlename = " ";
 function titleshow(text){
     lentitle = document.querySelectorAll("."+text+" .song").length;
     console.log("."+text+" .song");
+    titlename = "."+text+" .song";
     console.log(lentitle);
 }
 
@@ -64,14 +66,14 @@ function info(){
     // }
         if(value<lentitle){
             value += 1;
-            buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            buttonclick = document.querySelectorAll("."+text+" .song h3")[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
         }
         else{
             value = 0;
-            buttonclick = document.querySelectorAll(".song h3")[value].innerText;
+            buttonclick = document.querySelectorAll("."+text+" .song h3")[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
