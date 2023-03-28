@@ -18,7 +18,8 @@ for(var i=0;i<len;i++){
 }
 var lentitle = 0
 function titleshow(text){
-    lentitle = document.querySelectorAll("."+text+" song").length;
+    lentitle = document.querySelectorAll("."+text+" .song").length;
+    console.log("."+text+" .song");
     console.log(lentitle);
 }
 
