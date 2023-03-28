@@ -19,6 +19,7 @@ for(var i=0;i<len;i++){
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
+            console.log(len);
             buttonclick = this.querySelector("h3");
             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
