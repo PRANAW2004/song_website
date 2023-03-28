@@ -6,6 +6,7 @@ for(var i=0;i<lentitle;i++){
     document.querySelectorAll(".title")[i].addEventListener("click",function(){
         var len = this.querySelectorAll(".song").length;
         titleclick = true;
+        console.log(len)
 //     var len = document.querySelectorAll(".song").length;
     });
 }
