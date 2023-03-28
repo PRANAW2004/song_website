@@ -24,7 +24,6 @@ function titleshow(text){
 }
 
 
-
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
