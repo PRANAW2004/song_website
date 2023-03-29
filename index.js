@@ -83,6 +83,7 @@ function info(){
             
     }
 }
+console.log(buttonclick);
 var audio = new Audio();
 var sname = " ";
 function play(name){
