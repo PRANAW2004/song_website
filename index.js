@@ -201,3 +201,7 @@ else{
         document.querySelectorAll(".s1")[i].classList.remove("fa-5x");
     }
 }
+
+document.addEventListener("backbutton",function(){
+    window.history.back();
+},true);
