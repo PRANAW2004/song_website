@@ -69,14 +69,28 @@ function info(){
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
-            play(buttonclick);
+            if(flag){
+                play(buttonclick);
+            }
+            flag = false;
+            if(flag1){
+                play(buttonclick);
+            }
+            flag1 = false;
         }
         else{
             value = 0;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
-            play(buttonclick);
+            if(flag){
+                play(buttonclick);
+            }
+            flag = false;
+            if(flag1){
+                play(buttonclick);
+            }
+            flag1 = false;
         }
             
     }
