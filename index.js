@@ -30,13 +30,15 @@ function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
             buttonclick = this.querySelector("h3");
-            document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+//             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
             if(flag){
+                document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
             }
             flag = false;
             if(flag1){
+                document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
             }
             flag1 = false;
@@ -69,28 +71,14 @@ function info(){
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
-            if(flag){
-                play(buttonclick);
-            }
-            flag = false;
-            if(flag1){
-                play(buttonclick);
-            }
-            flag1 = false;
+            play(buttonclick);
         }
         else{
             value = 0;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
-            if(flag){
-                play(buttonclick);
-            }
-            flag = false;
-            if(flag1){
-                play(buttonclick);
-            }
-            flag1 = false;
+            play(buttonclick);
         }
             
     }
