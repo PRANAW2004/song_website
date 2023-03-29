@@ -123,6 +123,10 @@ input{
     .english-songs{
         margin-bottom: 110px;
     }
+    .back-btn{
+        height: 2rem;
+        width:2rem;
+    }
 }
 .copyright{
     position: relative;
