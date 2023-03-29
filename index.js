@@ -203,5 +203,9 @@ else{
 }
 
 document.addEventListener("backbutton",function(){
-    window.history.back();
+    document.querySelector(".footer1").style.display = "none";
+    document.querySelector(".back-btn").style.display = "none";
+    document.querySelector("."+name1).style.display = "none";
+    document.querySelector(".main-titles").style.display = "block";
+    document.querySelector(".copyright").style.display = "block";
 },true);
