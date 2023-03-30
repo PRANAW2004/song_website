@@ -35,11 +35,15 @@ function info(){
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
+                document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn2").style.display = "none";
             }
             flag = false;
             if(flag1){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
+                document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn2").style.display = "none";
             }
             flag1 = false;
             if(p1===true){
@@ -59,11 +63,15 @@ function info(){
     //     if(buttonclick === document.querySelectorAll(".song h3")[p1].innerText){
     //         p1 += 1;
     //         play(document.querySelectorAll(".song h3")[p1].innerText);
+               document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn2").style.display = "none";
     //     }
     //     else{
     //         console.log(document.querySelectorAll(".song h3")[p1].innerText);
     //         play(document.querySelectorAll(".song h3")[p1].innerText);   
     //         p1 += 1;
+               document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn2").style.display = "none";
     //     }
     // }
         if(value<lentitle){
@@ -115,10 +123,14 @@ function play(name){
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
     document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+    document.querySelector(".btn2").style.display = "block";
+    document.querySelector(".btn1").style.display = "none";
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
     document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+    document.querySelector(".btn1").style.display = "block";
+    document.querySelector(".btn2").style.display = "none";
 });
 
 function search(){
