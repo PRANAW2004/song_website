@@ -36,14 +36,14 @@ function info(){
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
-                document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn1").style.display = "inline";
                 document.querySelector(".btn2").style.display = "none";
             }
             flag = false;
             if(flag1){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
-                document.querySelector(".btn1").style.display = "block";
+                document.querySelector(".btn1").style.display = "inline";
                 document.querySelector(".btn2").style.display = "none";
             }
             flag1 = false;
@@ -64,15 +64,15 @@ function info(){
     //     if(buttonclick === document.querySelectorAll(".song h3")[p1].innerText){
     //         p1 += 1;
     //         play(document.querySelectorAll(".song h3")[p1].innerText);
-               document.querySelector(".btn1").style.display = "block";
-                document.querySelector(".btn2").style.display = "none";
+//                document.querySelector(".btn1").style.display = "block";
+//                 document.querySelector(".btn2").style.display = "none";
     //     }
     //     else{
     //         console.log(document.querySelectorAll(".song h3")[p1].innerText);
     //         play(document.querySelectorAll(".song h3")[p1].innerText);   
     //         p1 += 1;
-               document.querySelector(".btn1").style.display = "block";
-                document.querySelector(".btn2").style.display = "none";
+//                document.querySelector(".btn1").style.display = "block";
+//                 document.querySelector(".btn2").style.display = "none";
     //     }
     // }
         if(value<lentitle){
