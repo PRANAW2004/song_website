@@ -135,8 +135,8 @@ document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
     if(p1){
         document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-        btn2p = true;
     }
+    btn2p = true;
     document.querySelector(".btn1").style.display = "block";
     document.querySelector(".btn2").style.display = "none";
 });
