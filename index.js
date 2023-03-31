@@ -120,9 +120,13 @@ function play(name){
     }
 }
 
+var btn2p = false;
+
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+    if(btn2p){
+        document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+    }
     document.querySelector(".btn2").style.display = "block";
     document.querySelector(".btn1").style.display = "none";
 });
@@ -130,6 +134,7 @@ document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
     if(p1){
         document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+        btn2p = true;
     }
     document.querySelector(".btn1").style.display = "block";
     document.querySelector(".btn2").style.display = "none";
