@@ -126,7 +126,7 @@ function play(name){
 }
 
 function next(){
-    if(value>=0){
+    if(value>=0 && value<lentitle-1){
         value += 1;
         buttonclick = document.querySelectorAll(titlename)[value].innerText;
         console.log(buttonclick);
