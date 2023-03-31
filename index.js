@@ -249,6 +249,8 @@ if(x.matches){
         document.querySelectorAll(".s1")[i].classList.add("fa-5x");
     }
     document.querySelector(".back-btn").classList.add("btn-lg");
+    document.querySelector(".btn3").classList.add("fa-5x");
+    document.querySelector(".btn4").classList.add("fa-5x");
 }
 else{
     document.querySelector(".btn1").classList.remove("fa-5x");
@@ -256,6 +258,8 @@ else{
     for(var i=0;i<len3;i++){
         document.querySelectorAll(".s1")[i].classList.remove("fa-5x");
     }
+    document.querySelector(".btn1").classList.add("fa-5x");
+    document.querySelector(".btn2").classList.add("fa-5x");
 }
 
 document.addEventListener("backbutton",function(){
