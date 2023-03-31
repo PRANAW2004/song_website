@@ -5,7 +5,7 @@ let flag1 = false;
 var end = false;
 var p1 = false;
 var value = 0;
-
+var click = false;
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
@@ -32,6 +32,7 @@ function info(){
             buttonclick = this.querySelector("h3");
 //             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
+            click = true;
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
                 play(buttonclick.innerText);
@@ -124,7 +125,7 @@ var btn2p = false;
 
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    if(p1===true && btn2p===true){
+    if(click===true && btn2p===true){
         document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
         console.log("paused clicked",btn2p);
     }
@@ -134,10 +135,10 @@ document.querySelector(".btn1").addEventListener("click",function(){
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
-    if(p1){
+    if(cllick){
         document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+        btn2p = true;
     }
-    btn2p = true;
     document.querySelector(".btn1").style.display = "block";
     document.querySelector(".btn2").style.display = "none";
 });
