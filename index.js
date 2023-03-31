@@ -122,13 +122,17 @@ function play(name){
 
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+    if(p1){
+        document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+    }
     document.querySelector(".btn2").style.display = "block";
     document.querySelector(".btn1").style.display = "none";
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
-    document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+    if(p1){
+        document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+    }
     document.querySelector(".btn1").style.display = "block";
     document.querySelector(".btn2").style.display = "none";
 });
