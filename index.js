@@ -138,8 +138,25 @@ function next(){
     }
 }
 
+function previous(){
+    if(value>0){
+        value -=1;
+        buttonclick = document.querySelectorAll(titlename)[value].innerText;
+        console.log(buttonclick);
+        document.querySelector("marquee").innerText = "Playing "+buttonclick;
+        play(buttonclick);
+        document.querySelector(".btn1").style.display = "inline";
+        document.querySelector(".btn2").style.display = "none";
+        click = true;
+    }
+}
+
 document.querySelector(".btn3").addEventListener("click",function(){
     next();    
+});
+
+document.querySelector(".btn4").addEventListener("click",function(){
+    previous();
 })
 
 document.querySelector(".btn1").addEventListener("click",function(){
