@@ -134,10 +134,12 @@ document.querySelector(".btn1").addEventListener("click",function(){
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
+    console.log(click)
     if(click){
         document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
         btn2p = true;
     }
+    console.log(btn2p)
     document.querySelector(".btn1").style.display = "block";
     document.querySelector(".btn2").style.display = "none";
 });
