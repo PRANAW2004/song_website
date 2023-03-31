@@ -258,8 +258,8 @@ else{
     for(var i=0;i<len3;i++){
         document.querySelectorAll(".s1")[i].classList.remove("fa-5x");
     }
-    document.querySelector(".btn1").classList.add("fa-5x");
-    document.querySelector(".btn2").classList.add("fa-5x");
+    document.querySelector(".btn3").classList.remove("fa-5x");
+    document.querySelector(".btn4").classList.remove("fa-5x");
 }
 
 document.addEventListener("backbutton",function(){
