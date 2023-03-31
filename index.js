@@ -134,6 +134,7 @@ function next(){
         play(buttonclick);
         document.querySelector(".btn1").style.display = "inline";
         document.querySelector(".btn2").style.display = "none";
+        click = true;
     }
 }
 
