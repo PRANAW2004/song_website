@@ -122,9 +122,7 @@ function play(name){
 
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
-    if(p1){
-        document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
-    }
+    document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
     document.querySelector(".btn2").style.display = "block";
     document.querySelector(".btn1").style.display = "none";
 });
