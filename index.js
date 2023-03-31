@@ -129,7 +129,7 @@ document.querySelector(".btn1").addEventListener("click",function(){
         document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
         console.log("paused clicked",btn2p);
     }
-    document.querySelector(".btn2").style.display = "block";
+    document.querySelector(".btn2").style.display = "inline";
     document.querySelector(".btn1").style.display = "none";
 });
 document.querySelector(".btn2").addEventListener("click",function(){
@@ -140,7 +140,7 @@ document.querySelector(".btn2").addEventListener("click",function(){
         btn2p = true;
     }
     console.log(btn2p)
-    document.querySelector(".btn1").style.display = "block";
+    document.querySelector(".btn1").style.display = "inline";
     document.querySelector(".btn2").style.display = "none";
 });
 
