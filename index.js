@@ -81,6 +81,8 @@ function info(){
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
+            document.querySelector(".btn1").style.display = "inline";
+            document.querySelector(".btn2").style.display = "none";
         }
         else{
             value = 0;
@@ -88,6 +90,8 @@ function info(){
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
+            document.querySelector(".btn1").style.display = "inline";
+            document.querySelector(".btn2").style.display = "none";
         }
             
     }
@@ -128,6 +132,8 @@ function next(){
         console.log(buttonclick);
         document.querySelector("marquee").innerText = "Playing "+buttonclick;
         play(buttonclick);
+        document.querySelector(".btn1").style.display = "inline";
+        document.querySelector(".btn2").style.display = "none";
     }
 }
 
