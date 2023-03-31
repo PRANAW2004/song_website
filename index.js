@@ -29,20 +29,20 @@ function titleshow(text){
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
-            buttonclick = this.querySelector("h3");
+            buttonclick = this.querySelector("h3").innerText;
 //             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
             click = true;
             if(flag){
-                document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-                play(buttonclick.innerText);
+                document.querySelector("marquee").innerText = "Playing "+buttonclick;
+                play(buttonclick);
                 document.querySelector(".btn1").style.display = "inline";
                 document.querySelector(".btn2").style.display = "none";
             }
             flag = false;
             if(flag1){
-                document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-                play(buttonclick.innerText);
+                document.querySelector("marquee").innerText = "Playing "+buttonclick;
+                play(buttonclick);
                 document.querySelector(".btn1").style.display = "inline";
                 document.querySelector(".btn2").style.display = "none";
             }
@@ -50,7 +50,7 @@ function info(){
             if(p1===true){
                 for(var j=0;j<len;j++){
                 //console.log(j);
-                    if(document.querySelectorAll(".song h3")[j].innerText===buttonclick.innerText){
+                    if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
                     }
                 }
@@ -145,7 +145,7 @@ document.querySelector(".btn3").addEventListener("click",function(){
 document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
     if(click){
-        document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+        document.querySelector("marquee").innerText = "Paused "+buttonclick;
     }
     document.querySelector(".btn2").style.display = "inline";
     document.querySelector(".btn1").style.display = "none";
@@ -154,7 +154,7 @@ document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
     console.log(click)
     if(click){
-        document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
+        document.querySelector("marquee").innerText = "Playing "+buttonclick;
     }
     document.querySelector(".btn1").style.display = "inline";
     document.querySelector(".btn2").style.display = "none";
