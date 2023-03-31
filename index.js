@@ -126,6 +126,7 @@ document.querySelector(".btn1").addEventListener("click",function(){
     audio.pause();
     if(btn2p){
         document.querySelector("marquee").innerText = "Paused "+buttonclick.innerText;
+        console.log("paused clicked",btn2p);
     }
     document.querySelector(".btn2").style.display = "block";
     document.querySelector(".btn1").style.display = "none";
