@@ -135,7 +135,7 @@ document.querySelector(".btn1").addEventListener("click",function(){
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
-    if(cllick){
+    if(click){
         document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
         btn2p = true;
     }
