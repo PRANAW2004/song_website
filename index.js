@@ -10,10 +10,12 @@ var text1 = " ";
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
+        p1 = true;
         info();
     })
     document.querySelectorAll(".play")[i].addEventListener("click",function(){
         flag1 = true;
+        p1 = true;
         info();
     })
 }
@@ -34,7 +36,7 @@ function info(){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
             buttonclick = this.querySelector("h3").innerText;
 //             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-            p1 = true;
+//             p1 = true;
             click = true;
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick;
