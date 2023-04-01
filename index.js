@@ -28,7 +28,7 @@ function titleshow(text){
     console.log(lentitle);
 }
 
-var songlen = document.querySelectorAll(".song").length;
+
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
@@ -55,11 +55,12 @@ function info(){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
-                        console.log(value);
+                        
                     }
                 }
                 p1 = false;
             } 
+            console.log(value);
         });
     }
     if(end===true){
