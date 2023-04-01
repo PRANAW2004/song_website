@@ -22,13 +22,13 @@ var titlename = " ";
 function titleshow(text){
     text1 = text;
     lentitle = document.querySelectorAll("."+text+" .song").length;
+    console.log(lentitle);
     console.log("."+text+" .song");
     titlename = "."+text+" .song h3";
     console.log(lentitle);
 }
 
 var songlen = document.querySelectorAll(".song").length;
-
 function info(){
     for(var i=0;i<len;i++){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
@@ -51,7 +51,7 @@ function info(){
             }
             flag1 = false;
             if(p1===true){
-                for(var j=0;j<len;j++){
+                for(var j=0;j<lentitle;j++){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
@@ -79,7 +79,7 @@ function info(){
 //                 document.querySelector(".btn2").style.display = "none";
     //     }
     // }
-        if(value<songlen){
+        if(value<lentitle){
             value += 1;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
