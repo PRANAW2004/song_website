@@ -54,6 +54,7 @@ function info(){
             }
             flag1 = false;
             if(p1){
+                console.log("inside p1");
                 for(var j=0;j<lentitle;j++){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
