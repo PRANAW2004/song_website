@@ -27,6 +27,7 @@ function titleshow(text){
     console.log(lentitle);
 }
 
+var songlen = document.querySelectorAll(".song").length;
 
 function info(){
     for(var i=0;i<len;i++){
@@ -78,7 +79,7 @@ function info(){
 //                 document.querySelector(".btn2").style.display = "none";
     //     }
     // }
-        if(value<lentitle){
+        if(value<songlen){
             value += 1;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
