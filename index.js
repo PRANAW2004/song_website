@@ -52,7 +52,20 @@ function info(){
                 document.querySelector(".btn2").style.display = "none";
             }
             flag1 = false;
-            if(p1===true){
+//             if(p1===true){
+//                 for(var j=0;j<lentitle;j++){
+//                 //console.log(j);
+//                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
+//                         value = j;
+                        
+//                     }
+//                 }
+//                 p1 = false;
+//             } 
+//             console.log(value);
+        });
+    }
+    if(p1===true){
                 for(var j=0;j<lentitle;j++){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
@@ -63,8 +76,6 @@ function info(){
                 p1 = false;
             } 
             console.log(value);
-        });
-    }
     if(end===true){
     // if(p1<len){
     //     console.log(p1);
