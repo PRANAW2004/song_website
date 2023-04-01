@@ -57,7 +57,7 @@ function info(){
                 console.log("inside p1");
                 for(var j=0;j<lentitle;j++){
                 //console.log(j);
-                    if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
+                    if(document.querySelectorAll("."+text1+" .song h3")[j].innerText===buttonclick){
                         value = j;
                         
                     }
