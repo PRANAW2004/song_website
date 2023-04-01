@@ -10,8 +10,7 @@ var text1 = " ";
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
-        p1 = true;
-        console.log("img clicked",p1);
+        console.log("img clicked");
         info();
     })
     document.querySelectorAll(".play")[i].addEventListener("click",function(){
@@ -37,7 +36,8 @@ function info(){
         document.querySelectorAll(".song")[i].addEventListener("click",function(){
             buttonclick = this.querySelector("h3").innerText;
 //             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
-//             p1 = true;
+            p1 = true;
+            console.log("p1 is ",p1);
             click = true;
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick;
@@ -53,30 +53,19 @@ function info(){
                 document.querySelector(".btn2").style.display = "none";
             }
             flag1 = false;
-//             if(p1===true){
-//                 for(var j=0;j<lentitle;j++){
-//                 //console.log(j);
-//                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
-//                         value = j;
-                        
-//                     }
-//                 }
-//                 p1 = false;
-//             } 
-//             console.log(value);
-        });
-    }
-    if(p1===true){
+            if(p1===true){
                 for(var j=0;j<lentitle;j++){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
-                        console.log(value);
+                        
                     }
                 }
                 p1 = false;
             } 
             console.log(value);
+        });
+    }
     if(end===true){
     // if(p1<len){
     //     console.log(p1);
