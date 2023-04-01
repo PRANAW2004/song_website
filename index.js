@@ -29,7 +29,7 @@ function titleshow(text){
 
 
 function info(){
-    console.log(text1);
+    console.log("."+text1+" .song");
     for(var i=0;i<len;i++){
         document.querySelectorAll("."+text1+" .song")[i].addEventListener("click",function(){
             buttonclick = this.querySelector("h3").innerText;
