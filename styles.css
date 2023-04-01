@@ -35,7 +35,7 @@ hr{
     top: 6rem;
     z-index:0;
 }
-.english-songs,.tamil-songs,.telugu-songs{
+.english-songs,.tamil-songs,.telugu-songs,.hindi-songs,.other-language-songs,.best-songs{
     text-align: center;
     margin-top:3rem;
     position: relative;
