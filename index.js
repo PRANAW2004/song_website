@@ -54,6 +54,7 @@ function info(){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
+                        console.log(value);
                     }
                 }
                 p1 = false;
