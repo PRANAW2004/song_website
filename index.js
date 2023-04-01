@@ -11,6 +11,7 @@ for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
         p1 = true;
+        console.log("img clicked",p1);
         info();
     })
     document.querySelectorAll(".play")[i].addEventListener("click",function(){
@@ -70,7 +71,7 @@ function info(){
                 //console.log(j);
                     if(document.querySelectorAll(".song h3")[j].innerText===buttonclick){
                         value = j;
-                        
+                        console.log(value);
                     }
                 }
                 p1 = false;
