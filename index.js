@@ -95,6 +95,7 @@ function info(){
         }
         else{
             value = 0;
+            console.log("inside value 0",value);
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
             console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
