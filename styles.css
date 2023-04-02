@@ -124,15 +124,15 @@ input{
     h2,h3{
         font-size:2rem;
     }
-    .english-songs{
+    .english-songs,.telugu-songs,.tamil-songs,.hindi-songs,.other-language-songs,.best-songs{
         margin-bottom: 130px;
     }
-    .telugu-songs{
+/*     .telugu-songs{
         margin-bottom: 130px;
     }
     .tamil-songs{
         margin-bottom: 130px;
-    }
+    } */
     .back-btn{
         height: 7rem;
         width:15rem;
