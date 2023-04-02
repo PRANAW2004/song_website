@@ -144,8 +144,8 @@ input{
     .fa-2x{
         font-size:3.5rem;
     }
-    .search{
-        zoom:0.5;
+    .navigation-bar{
+        zoom:1;
     }
 }
 .copyright{
