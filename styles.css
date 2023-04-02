@@ -108,6 +108,9 @@ input{
         width: 15rem;
         color:white;
     }
+    .footer2{
+        zoom:2.5;
+    }
     .footer2 a{
         height: 5rem;
         width: 5rem;
