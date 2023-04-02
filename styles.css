@@ -144,9 +144,6 @@ input{
     .fa-2x{
         font-size:3.5rem;
     }
-    .container-fluid{
-        zoom:1;
-    }
 }
 .copyright{
     position: relative;
