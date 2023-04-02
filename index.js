@@ -247,7 +247,7 @@ function back(name1){
     document.querySelector("."+name1).style.display = "none";
     document.querySelector(".main-titles").style.display = "block";
     document.querySelector(".copyright").style.display = "block";
-    document.querySelector(".search").value.reset();
+    document.querySelector(".search").value = '';
 }
 
 var x = window.matchMedia("(max-width:1024px) and (min-width: 769px)")
