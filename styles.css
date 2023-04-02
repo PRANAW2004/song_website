@@ -144,7 +144,7 @@ input{
     .fa-2x{
         font-size:3.5rem;
     }
-    .navbar{
+    .container-fluid{
         zoom:1;
     }
 }
