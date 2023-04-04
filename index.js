@@ -10,7 +10,6 @@ var text1 = " ";
 for(var i=0;i<len;i++){
     document.querySelectorAll("img")[i].addEventListener("click",function(){
         flag = true;
-        console.log("img clicked");
         info();
     })
     document.querySelectorAll(".play")[i].addEventListener("click",function(){
@@ -24,10 +23,7 @@ var titlename = " ";
 function titleshow(text){
     text1 = text;
     lentitle = document.querySelectorAll("."+text+" .song").length;
-    console.log(lentitle);
-    console.log("."+text+" .song");
     titlename = "."+text+" .song h3";
-    console.log(lentitle);
 }
 
 
@@ -37,7 +33,6 @@ function info(){
             buttonclick = this.querySelector("h3").innerText;
 //             document.querySelector("marquee").innerText = "Playing "+buttonclick.innerText;
             p1 = true;
-            console.log("p1 is ",p1);
             click = true;
             if(flag){
                 document.querySelector("marquee").innerText = "Playing "+buttonclick;
@@ -54,7 +49,6 @@ function info(){
             }
             flag1 = false;
             if(p1){
-                console.log("inside p1");
                 for(var j=0;j<lentitle;j++){
                 //console.log(j);
                     if(document.querySelectorAll("."+text1+" .song h3")[j].innerText===buttonclick){
@@ -64,7 +58,6 @@ function info(){
                 }
                 p1 = false;
             } 
-            console.log(value);
         });
     }
     if(end===true){
@@ -87,7 +80,6 @@ function info(){
         if(value<lentitle){
             value += 1;
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
-            console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
             document.querySelector(".btn1").style.display = "inline";
@@ -95,9 +87,7 @@ function info(){
         }
         else{
             value = 0;
-            console.log("inside value 0",value);
             buttonclick = document.querySelectorAll(titlename)[value].innerText;
-            console.log(buttonclick);
             document.querySelector("marquee").innerText = "Playing "+buttonclick;
             play(buttonclick);
             document.querySelector(".btn1").style.display = "inline";
@@ -106,7 +96,6 @@ function info(){
             
     }
 }
-console.log(buttonclick);
 var audio = new Audio();
 var sname = " ";
 function play(name){
@@ -124,12 +113,11 @@ function play(name){
         sname = name;
         audio = new Audio("songs/"+name+".mp3");
         audio.play();
-        audio.onloadedmetadata = function(){
-            console.log(audio.duration);
-        }
+//         audio.onloadedmetadata = function(){
+//             console.log(audio.duration);
+//         }
         audio.onended = function(){
             end = true;
-            console.log("ended");
             info();
         }
     }
@@ -139,7 +127,6 @@ function next(){
     if(value>=0 && value<lentitle-1){
         value += 1;
         buttonclick = document.querySelectorAll(titlename)[value].innerText;
-        console.log(buttonclick);
         document.querySelector("marquee").innerText = "Playing "+buttonclick;
         play(buttonclick);
         document.querySelector(".btn1").style.display = "inline";
@@ -152,7 +139,6 @@ function previous(){
     if(value>0){
         value -=1;
         buttonclick = document.querySelectorAll(titlename)[value].innerText;
-        console.log(buttonclick);
         document.querySelector("marquee").innerText = "Playing "+buttonclick;
         play(buttonclick);
         document.querySelector(".btn1").style.display = "inline";
@@ -179,7 +165,6 @@ document.querySelector(".btn1").addEventListener("click",function(){
 });
 document.querySelector(".btn2").addEventListener("click",function(){
     audio.play();
-    console.log(click)
     if(click){
         document.querySelector("marquee").innerText = "Playing "+buttonclick;
     }
@@ -209,7 +194,6 @@ var len2 = document.querySelectorAll(".title").length;
 let pass = false;
 
 var len4 = document.querySelectorAll(".titleimg").length;
-console.log(len4);
 for(var i=0;i<len4;i++){
     document.querySelectorAll(".titleimg")[i].addEventListener("click",function(){
         pass = true;  
@@ -220,7 +204,6 @@ for(var i=0;i<len2;i++){
         if(pass){
             var name = this.querySelector("h2");
             name1 = name.innerText;
-            console.log("."+name.innerText);
             show(name.innerText);
             titleshow(name.innerText);
         }
