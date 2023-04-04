@@ -59,7 +59,7 @@ function info(){
                 //console.log(j);
                     if(document.querySelectorAll("."+text1+" .song h3")[j].innerText===buttonclick){
                         value = j;
-                        
+                        break;
                     }
                 }
                 p1 = false;
